@@ -1,18 +1,4 @@
-<!-- <div class="sleep-box">
-  <h2>Sleep Tracker</h2>
-  
-  <label>
-    Hours Slept:
-    <input type="number" [(ngModel)]="hoursSlept">
-  </label>
-
-  <button (click)="checkSleep()">Check</button>
-
-  <p>{{ message }}</p>
-</div> -->
-
-
-<div class="sleep-box max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
+<!-- <div class="sleep-box max-w-md mx-auto p-6 bg-white rounded-lg shadow-md">
   <h2 class="text-2xl font-bold text-gray-800 mb-4">Sleep Tracker</h2>
   
   <label class="block text-gray-700 text-sm font-bold mb-2">
@@ -25,4 +11,24 @@
   </button>
 
   <p class="mt-4 text-gray-600">{{ message }}</p>
+</div> -->
+
+
+<div class="district-box">
+  <h2>Select a District in Battambang Province</h2>
+
+  <label>
+    <select [(ngModel)]="selectedDistrict">
+      <option value="">-- Choose District --</option>
+      <option>Battambang City</option>
+      <option>Ek Phnom</option>
+      <option>Bavel</option>
+      <option>Moung Ruessei</option>
+      <option>Rotanak Mondol</option>
+    </select>
+  </label>
+
+  <button (click)="checkDistrict()">Check</button>
+
+  <p class="result">{{ message }}</p>
 </div>

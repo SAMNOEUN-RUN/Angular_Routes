@@ -1,24 +1,12 @@
-<nav class="bg-blue-600 text-white shadow-md px-6 py-3 flex gap-6 items-center">
-  <a routerLink="/" 
-     routerLinkActive="font-semibold border-b-2 border-white"
-     [routerLinkActiveOptions]="{ exact: true }"
-     class="hover:text-yellow-300 transition-colors duration-200">
-    Dashboard
-  </a>
-
-  <a routerLink="/sleep" 
-     routerLinkActive="font-semibold border-b-2 border-white"
-     class="hover:text-yellow-300 transition-colors duration-200">
-    Home
-  </a>
-
-  <a routerLink="/about" 
-     routerLinkActive="font-semibold border-b-2 border-white"
-     class="hover:text-yellow-300 transition-colors duration-200">
-    About
-  </a>
+<nav class="navbar">
+  <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Dashboard</a>
+  <a routerLink="/home" routerLinkActive="active">Home</a>
+  <a routerLink="/history" routerLinkActive="active">History</a>
+  <a routerLink="/culture" routerLinkActive="active">Culture</a>
+  <a routerLink="/tourism" routerLinkActive="active">Tourism</a>
+  <a routerLink="/food" routerLinkActive="active">Food</a>
 </nav>
 
-<hr class="border-gray-300" />
+<hr />
 
 <router-outlet></router-outlet>
