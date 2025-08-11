@@ -1,17 +1,11 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { DistrictSelectorComponent } from './dashboard/district-selector.component';
-import { HistoryComponent } from './history/history.component';
-import { CultureComponent } from './culture/culture.component';
-import { TourismComponent } from './tourism/tourism.component';
-import { FoodComponent } from './food/food.component';
+
 
 export const routes: Routes = [
-  { path: '', component: DistrictSelectorComponent },
-  { path: 'home', component: HomeComponent },
-  { path: 'history', component: HistoryComponent },
-  { path: 'culture', component: CultureComponent },
-  { path: 'tourism', component: TourismComponent },
-  { path: 'food', component: FoodComponent },
-  { path: '**', redirectTo: '' }
+   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
+   { path: 'count', loadComponent: () => import('./features/count/count').then(m => m.CounterComponent) },
+   { path: 'dashboard', loadComponent: () => import('./features/dashboard/dashboard').then(m => m.DashboardComponent) },
+   { path: 'culture', loadComponent: () => import('./features/culture/culture').then(m => m.CultureComponent) },
+   { path: 'food', loadComponent: () => import('./features/food/food').then(m => m.FoodComponent) },
+   { path: '**', redirectTo: '' }
 ];

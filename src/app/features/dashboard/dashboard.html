@@ -1,0 +1,23 @@
+<div class="district-box">
+  <h2>District in Battambang Province</h2>
+
+  <label>
+    <select [(ngModel)]="selectedDistrict">
+      <option value="">-- Choose District --</option>
+      <option>Battambang City</option>
+      <option>Ek Phnom</option>
+      <option>Bavel</option>
+      <option>Moung Ruessei</option>
+      <option>Rotanak Mondol</option>
+    </select>
+  </label>
+
+  <button (click)="checkDistrict()">Check</button>
+
+  <p class="result">{{ message }}</p>
+</div>
+<p class="text-red">Pantry works!</p>
+<h1 class="text-red-900">Welcome to Battambang Province</h1>
+<p class="text-2xl">Battambang is Cambodia’s second-largest city, famous for its well-preserved French colonial architecture, scenic countryside, and vibrant local markets.</p>
+<img src="images/battambang.jpeg" alt="Battambang City" width="100%">
+ 

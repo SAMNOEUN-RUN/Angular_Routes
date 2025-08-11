@@ -1,0 +1,39 @@
+<!-- <div class="flex flex-col items-center gap-4 p-6 bg-gray-100 rounded-lg shadow-md max-w-xs">
+  <p>Count: {{ count() }}</p>
+  <button (click)="increment()">+1</button>
+  <hr />
+  <button (click)="decrement()">-1</button>
+  <hr />
+  <button (click)="reset()">Reset</button>
+</div> -->
+
+<div class="flex flex-col items-center gap-4 p-6 bg-gray-100 rounded-lg shadow-md max-w-xs mx-auto">
+  <p class="text-lg font-semibold">
+    Count: <span class="text-blue-600">{{ count() }}</span>
+  </p>
+
+  <div class="flex gap-2">
+    <button
+      (click)="increment()"
+      class="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition"
+    >
+      +1
+    </button>
+
+    <button
+      (click)="reset()"
+      class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition"
+    >
+      Reset
+    </button>
+
+    <button
+      (click)="decrement()"
+      class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition"
+    >
+      -1
+    </button>
+
+    
+  </div>
+</div>

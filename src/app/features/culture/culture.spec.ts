@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SleepComponent } from './district-selector.component';
+import { Culture } from './culture';
 
-describe('SleepComponent', () => {
-  let component: SleepComponent;
-  let fixture: ComponentFixture<SleepComponent>;
+describe('Culture', () => {
+  let component: Culture;
+  let fixture: ComponentFixture<Culture>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SleepComponent]
+      imports: [Culture]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SleepComponent);
+    fixture = TestBed.createComponent(Culture);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

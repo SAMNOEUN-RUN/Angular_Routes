@@ -1,41 +1,14 @@
-// import { Component } from '@angular/core';
-// import { FormsModule } from '@angular/forms';
-
-// @Component({
-//   selector:'app-sleep',
-//   standalone: true,
-//   templateUrl: './sleep.component.html',
-//   imports: [FormsModule],
-//   styleUrls: ['./sleep.component.scss']
-// })
-
-// export class SleepComponent {
-//   hoursSlept: number = 0;
-//   message: string = '';
-
-//   checkSleep() {
-//     if (this.hoursSlept >= 8 && this.hoursSlept <= 10) {
-//       this.message = '😴 You had a good sleep!';
-//     } else if (this.hoursSlept >=8) {
-//       this.message = '😟 You over sleep!';
-//     } else if (this.hoursSlept < 8) {
-//       this.message = '😐 You had an bad sleep!';
-//     }
-// }
-// }
-
-
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-  selector: 'app-district',
+  selector: 'app-dashboard',
   standalone: true,
-  templateUrl: './district-selector.component.html',
   imports: [FormsModule],
-  styleUrls: ['./district-selector.component.scss']
+  templateUrl: './dashboard.html',
+  styleUrl: './dashboard.scss'
 })
-export class DistrictSelectorComponent {
+export class DashboardComponent {
   selectedDistrict: string = '';
   message: string = '';
 
